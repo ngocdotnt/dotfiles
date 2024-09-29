@@ -13,7 +13,7 @@ require("nvim-treesitter.configs").setup({
     -- Ruby) for indent rules. If you are experiencing weird indenting
     -- issues, add the language to the list of additional vim regex
     -- highlighting and disabled languages for indent.
-    additional_vim_regex_highlighting = { "ruby" },
+    additional_vim_regex_highlighting = { "markdown" },
   },
   textobjects = { enable = false },
   indent = {
