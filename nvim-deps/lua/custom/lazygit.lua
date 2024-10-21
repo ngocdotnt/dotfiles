@@ -1,0 +1,12 @@
+-- local Terminal = require("toggleterm.terminal").Terminal
+-- lazygit_toggle = function()
+--   local lazygit = Terminal:new({
+--     cmd = "lazygit",
+--     hidden = true,
+--     direction = "float",
+--     on_open = function(term)
+--       vim.keymap.del("t", "<Esc><Esc>", { buffer = term.bufnr })
+--     end,
+--   })
+--   lazygit:toggle()
+-- end
