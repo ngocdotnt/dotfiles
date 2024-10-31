@@ -1,0 +1,27 @@
+[opener]
+# play = [
+#   {run = 'C:\Users\Admin\scoop\apps\mpv\current\mpv.exe', orphan = true, for = 'windows'},
+# ]
+
+edit = [
+  # {run = "%EDITOR% %*", block = true, for = "windows"},
+  {run = "nvim.exe %*", block = true, for = "windows"},
+]
+
+open = [
+  {run = 'xdg-open "$@"', desc = 'Open'},
+]
+
+[open]
+# prepend_rules = [
+#   {name = "*.md", use = "edit"},
+# ]
+
+rules = [
+  {mime = 'text/*', use = 'edit'},
+  {mime = 'video/*', use = 'play'},
+
+  {name = '*.md', use = 'edit'},
+
+  {name = '*.html', use = ['open', 'edit']},
+]
